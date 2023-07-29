@@ -159,7 +159,7 @@ API地址：http://[gitcontrol服务器ip]:[端口]/gitcontrol/public/api/branch
 
 QQ 1 群：903664781
 
-Github: https://gitee.com/danielxu/gitcontrol
+Github: https://github.com/daniel1983cn/gitcontrol
 
 Gitee: https://gitee.com/danielxu/gitcontrol
 
