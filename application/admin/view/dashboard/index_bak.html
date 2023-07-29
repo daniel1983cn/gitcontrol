@@ -1,0 +1,314 @@
+<html>
+<head>title</head>
+<style type="text/css">
+    .sm-st {
+        background: #fff;
+        padding: 20px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        margin-bottom: 20px;
+    }
+
+    .sm-st-icon {
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+        line-height: 60px;
+        text-align: center;
+        font-size: 30px;
+        background: #eee;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        float: left;
+        margin-right: 10px;
+        color: #fff;
+    }
+
+    .sm-st-info {
+        padding-top: 2px;
+    }
+
+    .sm-st-info span {
+        display: block;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .orange {
+        background: #fa8564 !important;
+    }
+
+    .tar {
+        background: #45cf95 !important;
+    }
+
+    .sm-st .green {
+        background: #86ba41 !important;
+    }
+
+    .pink {
+        background: #AC75F0 !important;
+    }
+
+    .yellow-b {
+        background: #fdd752 !important;
+    }
+
+    .stat-elem {
+
+        background-color: #fff;
+        padding: 18px;
+        border-radius: 40px;
+
+    }
+
+    .stat-info {
+        text-align: center;
+        background-color: #fff;
+        border-radius: 5px;
+        margin-top: -5px;
+        padding: 8px;
+        -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 1px 0px rgba(0, 0, 0, 0.05);
+        font-style: italic;
+    }
+
+    .stat-icon {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .st-red {
+        background-color: #F05050;
+    }
+
+    .st-green {
+        background-color: #27C24C;
+    }
+
+    .st-violet {
+        background-color: #7266ba;
+    }
+
+    .st-blue {
+        background-color: #23b7e5;
+    }
+
+    .stats .stat-icon {
+        color: #28bb9c;
+        display: inline-block;
+        font-size: 26px;
+        text-align: center;
+        vertical-align: middle;
+        width: 50px;
+        float: left;
+    }
+
+    .stat {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+    }
+
+    .stat .value {
+        font-size: 20px;
+        line-height: 24px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: 500;
+    }
+
+    .stat .name {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 5px 0;
+    }
+
+    .stat.lg .value {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .stat-col {
+        margin:0 0 10px 0;
+    }
+    .stat.lg .name {
+        font-size: 16px;
+    }
+
+    .stat-col .progress {
+        height: 2px;
+    }
+
+    .stat-col .progress-bar {
+        line-height: 2px;
+        height: 2px;
+    }
+
+    .item {
+        padding: 30px 0;
+    }
+
+
+    #statistics .panel {
+        min-height: 150px;
+    }
+
+    #statistics .panel h5 {
+        font-size: 14px;
+    }
+</style>
+<body>
+   <?php echo "saaaas";>
+
+</body>
+
+</html>
+<!--<div class="panel panel-default panel-intro">-->
+<!--    <div class="panel-heading">-->
+<!--        {:build_heading(null, false)}-->
+<!--        <ul class="nav nav-tabs">-->
+<!--            <li class="active"><a href="#one" data-toggle="tab">{:__('Dashboard')}</a></li>-->
+<!--&lt;!&ndash;            <li><a href="#two" data-toggle="tab">{:__('Custom')}</a></li>&ndash;&gt;-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--    <div class="panel-body">-->
+<!--        <div id="myTabContent" class="tab-content">-->
+<!--            <div class="tab-pane fade active in" id="one">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-sm-3 col-xs-6">-->
+<!--                        <div class="sm-st clearfix">-->
+<!--                            <span class="sm-st-icon st-red"><i class="fa fa-users"></i></span>-->
+<!--                            <div class="sm-st-info">-->
+<!--                                <span>{$totalcommits}</span>-->
+<!--                                {:__('Total commit')}-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-sm-3 col-xs-6">-->
+<!--                        <div class="sm-st clearfix">-->
+<!--                            <span class="sm-st-icon st-red"><i class="fa fa-users"></i></span>-->
+<!--                            <div class="sm-st-info">-->
+<!--                                <span>{$totalmerges}</span>-->
+<!--                                {:__('Total merge')}-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-sm-3 col-xs-6">-->
+<!--                        <div class="sm-st clearfix">-->
+<!--                            <span class="sm-st-icon st-red"><i class="fa fa-users"></i></span>-->
+<!--                            <div class="sm-st-info">-->
+<!--                                <span>{$totalnotes}</span>-->
+<!--                                {:__('Total note')}-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-sm-3 col-xs-6">-->
+<!--                        <div class="sm-st clearfix">-->
+<!--                            <span class="sm-st-icon st-violet"><i class="fa fa-magic"></i></span>-->
+<!--                            <div class="sm-st-info">-->
+<!--                                <span>{$totaluser}</span>-->
+<!--                                {:__('Total user')}-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-sm-3 col-xs-6">-->
+<!--                        <div class="sm-st clearfix">-->
+<!--                            <span class="sm-st-icon st-blue"><i class="fa fa-leaf"></i></span>-->
+<!--                            <div class="sm-st-info">-->
+<!--                                <span>{$totalprojects}</span>-->
+<!--                                {:__('Total project')}-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-sm-3 col-xs-6">-->
+<!--                        <div class="sm-st clearfix">-->
+<!--                            <span class="sm-st-icon st-green"><i class="fa fa-user"></i></span>-->
+<!--                            <div class="sm-st-info">-->
+<!--                                <span>{$totalbranchs}</span>-->
+<!--                                {:__('Total branch')}-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--&lt;!&ndash;                <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="col-lg-8">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div id="echart" class="btn-refresh" style="height:300px;width:100%;"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="col-lg-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="card sameheight-item stats">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="card-block">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="row row-sm stats-container">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="col-xs-6 stat-col">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="stat-icon"><i class="fa fa-rocket"></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="stat">&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="value"> {$todaycommits}</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="name"> {:__('Today commit')}</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="progress">&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="progress-bar progress-bar-success" style="width: 20%"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="col-xs-6 stat-col">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="stat-icon"><i class="fa fa-vcard"></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="stat">&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="value"> {$todaymerges}</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="name"> {:__('Today merge')}</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="progress">&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="progress-bar progress-bar-success" style="width: 20%"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="col-xs-6  stat-col">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="stat-icon"><i class="fa fa-calendar"></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="stat">&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="value"> {$todaynotes}</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="name"> {:__('Today note')}</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="progress">&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="progress-bar progress-bar-success" style="width: 20%"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="col-xs-6 stat-col">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="stat-icon"><i class="fa fa-calendar-plus-o"></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="stat">&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="value"> {$todayuser}</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="name"> {:__('Today user')}</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="progress">&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="progress-bar progress-bar-success" style="width: 20%"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="col-xs-6  stat-col">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="stat-icon"><i class="fa fa-user-circle"></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="stat">&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="value"> {$todayprojects}</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="name"> {:__('Today project')}</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="progress">&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="progress-bar progress-bar-success" style="width: 20%"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="col-xs-6  stat-col">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="stat-icon"><i class="fa fa-user-circle-o"></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="stat">&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="value"> {$todaybranchs}</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="name"> {:__('Today branch')}</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="progress">&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="progress-bar progress-bar-success" style="width: 20%"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
